@@ -1,0 +1,770 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: #fff;
+}
+
+body {
+    line-height: 1.75;
+    font-size: 16px;
+    color: #333;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", Meiryo, sans-serif;
+    transition: 300ms;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+.other_list_item,
+.other_list_item_HW,
+.other_list_item_SW,
+.main .header02-item {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 24px;
+}
+
+.header02 {
+    padding: 16px 24px;
+    background-color: #fafafa;
+}
+
+.header02-logo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 43px;
+}
+
+.header02-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.mainParagraphs {
+    list-style: none;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+.ExMa {
+    list-style: none;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+#page_up {
+    transition: 0.35s;
+}
+
+/* トップへ戻るボタン */
+.page_top_btn {
+    z-index:10;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 15px 23px;
+    text-align: center;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    transition: 0.35s;
+    border-radius: 1000px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+}
+
+.top_all:hover #page_up {
+    transform: rotate(-90deg);
+}
+
+/* hover時page_top */
+.page_top_btn:hover {
+    background-color: white;
+    color: red;
+    border: solid;
+    border-color: red;
+    border-radius: 400px 400px 400px 1000px;
+    width: 78px;
+    height: 78px;
+    padding: 20px;
+    transform: rotate(90deg);
+}
+
+.page_top_btn:active {
+    color: #e60044;
+    transform: scale(0.9) rotate(90deg);
+    transition: 0.1s;
+}
+
+/* <div class="b"></div> */
+.b {
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+}
+
+.b:hover {
+    transform: scale(0.9) rotate(-5deg);
+}
+
+.b:active {
+    transform: scale(0.8) rotate(-3deg);
+}
+
+.header-itm {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    transition: 1.4s;
+}
+
+.header-itm:hover {
+    background-color: #fafafa;
+    border: #444 solid 0.03px;
+    transform: scale(1.4);
+    padding: 10px 45px;
+    margin-bottom: 0px;
+    transition: 0.4s;
+    margin: 0px 30px;
+}
+
+.dis_p {
+    padding-top: 60px;
+}
+
+.header02-net {
+    text-align: center;
+    font-size: 10px;
+}
+.menu-li {
+    font-size: 1.25em;
+    font-weight: 800;
+    line-height: 20px;
+    text-align: center;
+    list-style: none;
+    transition: 0.4s;
+    padding: 0px 0px;
+    margin: 0px 3px;
+    padding: 0px 0px;
+}
+
+.menu-li a {
+    text-decoration: none;
+    color: #222;
+    width: 100%;
+    display: block;
+    position: relative;
+    max-width: 150px;
+    scale: 1.3;
+}
+
+.menu-li a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #e60044;
+    transform: scale(0, 1);
+    transition: transform 0.4s;
+    transform-origin: right top;
+}
+
+.menu-li a:hover::after {
+    transform: scale(1, 1);
+    transform-origin: left top;
+}
+
+.menu-li a:hover {
+    color: #e60044;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.main-item {
+    color: #ee2d7b;
+    font-size: 120%;
+    transition: 0.3s;
+    height: 30px;
+    float: left;
+}
+
+.menu-li:active {
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+.menu-li:hover {
+    transition: 1s;
+    transform: scale(0.97);
+}
+
+.menu-li:active {
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+/* ヘッダーWarpのCSS↓ */
+
+.BackWarp {
+    margin-left: 110px;
+    color: #e60044;
+    border: solid #e60044 3px;
+    padding: 12px 32.5px 8px 27.5px;
+    border-radius: 100px;
+    position: absolute;
+    transition: 600ms;
+}
+
+.HomeWarp {
+    color: #3cb0dd;
+    margin-left: -10px;
+    border: solid #3cb0dd 3px;
+    padding: 10px 30px;
+    border-radius: 100px;
+    position: absolute;
+    transition: 600ms;
+}
+
+.BackWarp:active {
+    color: white;
+    background-color: #e60044;
+    transition: 300ms;
+    transform: rotateX(25deg);
+}
+
+.HomeWarp:active {
+    color: white;
+    background-color: #3cb0dd;
+    transition: 300ms;
+    transform: rotateX(25deg);
+}
+
+.HomeWarp:hover,
+.BackWarp:hover {
+    transform: rotateY(-15deg) rotateX(15deg) scale(1.2);
+    transition: 300ms;
+}
+
+/* ヘッダーWarpのCSS終了 */
+
+.LastToStart,
+.LTSplus {
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border-bottom: #333 1px solid;
+    flex-direction: row;
+    transition: 300ms;
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+.LastToStart:hover {
+    transition: 300ms;
+    padding: 0px 2px;
+    margin: -3px 1px 3px -2px;
+    border-bottom: #333 3px double;
+    transform: scale(1.1);
+}
+.LTSplus:hover {
+    transition: 300ms;
+    padding: 0px 2px;
+    margin: -3px 1px 3px -2px;
+    border-bottom: #333 3px double;
+    transform: scale(1.05);
+}
+
+/* 目次開始地点 */
+
+[class^="AppD"] {
+    border-left: 5px solid #34a853;
+    background: #f4f4f4;
+}
+
+[class^="CED"] {
+    border-left: 5px solid #4285f4;
+    background: #f4f4f4;
+}
+
+[class^="AppD"],
+[class^="CED"] {
+    position: relative;
+    display: inline-block;
+    scale: 0.8;
+    transition: 300ms;
+}
+
+[class^="AppD"]:hover,
+[class^="CED"]:hover {
+    border-width: 0px;
+    margin-left: 4px;
+    transition: 300ms;
+    transform: scale(0.97);
+}
+[class^="AppD"]:after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background: #34a853;
+    transition: transform 500ms;
+    transform-origin: right top;
+    transform: scale(0, 3);
+}
+
+[class^="CED"]:after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background: #4285f4;
+    transition: transform 500ms;
+    transform-origin: right top;
+    transform: scale(0, 3);
+}
+
+[class^="AppD"]:hover:after,
+[class^="CED"]:hover:after {
+    transform-origin: left;
+    transform: scale(1, 0.5);
+}
+
+.MenuLink {
+    transition: 500ms;
+}
+
+.MenuLink:hover {
+    font-size: 16px;
+    transition: 500ms;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.MLP,
+.MLD,
+.ChE,
+.AOD,
+.iOS,
+.AndR {
+    text-decoration: underline;
+}
+.MLY {
+    text-decoration: underline #ff0000;
+}
+.MLT {
+    text-decoration: underline #1da1f2;
+}
+.MLG {
+    text-decoration: underline #4285f4;
+}
+.MLDp,
+.Win10,
+.MST {
+    text-decoration: underline #0063e5;
+}
+
+.ChE:hover {
+    margin-left: 11px;
+}
+.Win10:hover {
+    margin-left: 6px;
+}
+/* 目次終了 */
+
+.main-item-app {
+    list-style: none;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    border-bottom: solid #111 0.5px;
+}
+
+.main-item {
+    font-size: 30px;
+}
+
+.AppPC2,
+.AppAn2 {
+    font-size: 30px;
+}
+
+.img {
+    margin-bottom: 30px;
+    padding: 3px;
+    width: 300px;
+    background: linear-gradient(
+        to right,
+        #362ae0 0%,
+        #3b79cc 50%,
+        #42d3ed 100%
+    );
+    border-radius: 50px;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width:500px ;
+}
+
+.selection-img {
+    width: 800px;
+}
+
+.SonarMixer {
+    /* max-width: 1000px; */
+    width: 800px;
+}
+.whenDisplay {
+    opacity: 0;
+    padding-bottom: 10px;
+    margin: 6px;
+}
+.whenDisplay:hover {
+    padding-bottom: 3px;
+}
+.img:hover {
+    border-radius: 30px;
+    transition: 100ms;
+}
+.whenDisplay::after {
+    opacity: 1;
+}
+@keyframes viewAnim {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0;
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(1deg);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.05) rotate(3deg);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+.alpha {
+    animation: viewAnim 500ms;
+    transition: 200ms;
+    animation-fill-mode: forwards;
+}
+.selection-img:hover {
+    margin-top: 13px;
+}
+.SteelseriesHome {
+    display: flex;
+    float: right;
+    max-width: 200px;
+    margin-top: -100px;
+    margin-right: -10px;
+    margin-bottom: -100px;
+    z-index:1;
+}
+.SonarMixer:hover {
+    margin-top: -93px;
+}
+.SteelseriesHome:hover {
+    margin-top: -93px;
+}
+.SonarMixer {
+    margin-top: -100px;
+    margin-left: -40px;
+}
+.stream1 {
+    margin-top: 30px;
+    max-width: 700px;
+    width: 1000px;
+    margin-bottom: 5px;
+}
+.stream1:hover {
+    margin-top: 37px;
+}
+.stream2 {
+    max-width: 800px;
+    width: 800px;
+}
+.stream2:hover {
+    margin-top: 13px;
+}
+.sonarGaming {
+    max-width: 700px;
+    width: 700px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.sonarGaming:hover {
+    margin-top: 17px;
+}
+p.GoogleFonts,
+body {
+    font-family: "Raleway", "BIZ UDPGothic", cursive;
+}
+p.GoogleFonts {
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    margin: 3px;
+}
+.sorgame2 {
+    margin-bottom: 30px;
+}
+
+.yamaha {
+    border-bottom: #333 1px solid;
+    flex-direction: row;
+    transition: 300ms;
+    display: inline;
+}
+
+.yamaha:hover {
+    transition: 300ms;
+    border-bottom: #333 3px double;
+}
+
+.MWBin {
+    border: solid 1px #333;
+    border-radius: 100px;
+    padding: 24px 100px;
+    margin-left: 100px;
+    display: inline;
+}
+
+.MWB {
+    transition: 300ms;
+    padding-top: 30px;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.MWB:hover {
+    scale: 1.3;
+}
+
+.appsLink {
+    display: inline;
+    padding: 30px;
+    border: solid #333;
+    border-radius: 300px;
+    transition: 300ms;
+}
+.appsLink:hover {
+    scale: 1.3;
+}
+
+.paragraph-border {
+    border-bottom: 0.3px #333 solid;
+}
+
+
+
+
+
+.DBOverview{
+    font-size: 10px;
+}
+
+.DownloadButton {
+    margin: 0 27%;
+    scale: 1.3;
+    margin-top: 10px;
+    width: 200px;
+    max-width: 200px;
+    height: 50px;
+    max-height: 50px;
+    background: #37b06d;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 35px;
+    padding: 10px;
+}
+.hover {
+    position: relative;
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    background: #34475e;
+    left: -250px;
+    transition: 0.3s;
+    transform: rotate(20deg);
+    opacity: 1;
+}
+.click {
+    color: white;
+    transition: 0.3s;
+    font-size: 25px;
+    margin-top:-7px ;
+}
+.DownloadButton:hover .hover {
+    left: -145px;
+}
+.DownloadButton:hover .click {
+    margin-left: 80px;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+
+.sure {
+    padding-left: 7px;
+    padding-top: 16px;
+    line-height: 50%;
+    margin-top: 29px;
+    margin-right: -94px; 
+    color: white;
+    transform: rotate(-20deg);
+}
+.DownloadButton:active {
+    box-shadow: 2px 2px 1px #888888;
+}
+.DownloadButton:hover{
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.geekImg{
+    max-width: 500px;
+}
+
+/* スマホ用css↓ レスポンシブ対応*/
+@media screen and (max-width: 1250px) {
+    .HomeWarp,
+    .BackWarp {
+        border-radius: 10px;
+        padding: 3px;
+        margin-top: 55px;
+    }
+    .BackWarp {
+        margin-left: 40px;
+    }
+    .menu-li {
+        font-size: 10px;
+        margin: 0px;
+    }
+    .header02-logo {
+        margin-top: -10px;
+        font-size: 40px;
+    }
+    p.GoogleFonts {
+        display: none;
+    }
+    .sonarGaming,.stream1,.stream2,.SonarMixer {
+        max-width: 500px;
+        /* width: 700px; */
+        margin-bottom: 10px;
+        margin-top: 10px;
+        pointer-events:none;
+    }
+    .MenuAll span{
+        display: none;
+    }
+}
+@media screen and (max-width: 778px) {
+    .HomeWarp,
+    .BackWarp {
+        border-radius: 10px;
+        padding: 3px;
+        margin-top: 55px;
+    }
+    .BackWarp {
+        margin-left: 40px;
+    }
+    .menu-li {
+        font-size: 10px;
+        margin: 0px;
+    }
+    .header02-logo {
+        margin-top: -10px;
+        font-size: 20px;
+    }
+    p.GoogleFonts {
+        display: none;
+    }
+    .img{
+        max-width: 230px;
+    }
+    .sonarGaming,.stream1,.stream2,.SonarMixer {
+        max-width: 500px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        pointer-events:none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .HomeWarp,
+    .BackWarp {
+        border-radius: 10px;
+        padding: 3px;
+        margin-top: 30px;
+    }
+    .BackWarp {
+        margin-left: 40px;
+    }
+    .menu-li {
+        font-size: 8px;
+        margin: 0px;
+    }
+    .header02-logo {
+        margin-top: 0px;
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+    .account-in {
+        padding: 0;
+    }
+    p.GoogleFonts {
+        display: none;
+    }
+    .sonarGaming,.stream1,.stream2,.SonarMixer,.img {
+        max-width: 300px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        pointer-events:none;
+    }
+}
+/* スマホ用終わり レスポンシブ対応終わり */
