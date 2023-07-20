@@ -698,6 +698,13 @@ p.GoogleFonts {
         margin-top: 10px;
         pointer-events:none;
     }
+    .SteelseriesHome{
+        max-width: 150px;
+        /* width: 700px; */
+        margin-bottom: 10px;
+        margin-top: 10px;
+        pointer-events:none;
+    }
     .MenuAll span{
         display: none;
     }
@@ -727,10 +734,17 @@ p.GoogleFonts {
         max-width: 230px;
     }
     .sonarGaming,.stream1,.stream2,.SonarMixer {
-        max-width: 500px;
+        max-width: 370px;
         margin-bottom: 10px;
         margin-top: 10px;
         margin-left: 10px;
+        pointer-events:none;
+    }
+    .SteelseriesHome{
+        max-width: 150px;
+        /* width: 700px; */
+        margin-bottom: 10px;
+        margin-top: 10px;
         pointer-events:none;
     }
 }
@@ -760,10 +774,17 @@ p.GoogleFonts {
         display: none;
     }
     .sonarGaming,.stream1,.stream2,.SonarMixer,.img {
-        max-width: 300px;
+        max-width: 350px;
         margin-bottom: 10px;
         margin-top: 10px;
         margin-left: 10px;
+        pointer-events:none;
+    }
+    .SteelseriesHome{
+        max-width: 100px;
+        /* width: 700px; */
+        margin-bottom: 10px;
+        margin-top: 10px;
         pointer-events:none;
     }
 }
