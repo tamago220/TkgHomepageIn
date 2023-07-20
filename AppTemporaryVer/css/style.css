@@ -699,8 +699,8 @@ p.GoogleFonts {
         pointer-events:none;
     }
     .SteelseriesHome{
-        max-width: 250px;
-        width: 700px;
+/*         max-width: 250px; */
+        width: 250px;
         margin-bottom: 10px;
         margin-top: 10px;
         pointer-events:none;
@@ -741,8 +741,8 @@ p.GoogleFonts {
         pointer-events:none;
     }
     .SteelseriesHome{
-        max-width: 200px;
-        width: 700px;
+/*         max-width: 200px; */
+        width: 200px;
         margin-bottom: 10px;
         margin-top: 10px;
         pointer-events:none;
@@ -781,10 +781,10 @@ p.GoogleFonts {
         pointer-events:none;
     }
     .SteelseriesHome{
-        max-width: 140px;
+/*         max-width: 140px */
         margin-bottom: 10px;
         margin-top: 10px;
-        width: 700px;
+        width: 140px;
         pointer-events:none;
     }
 }
